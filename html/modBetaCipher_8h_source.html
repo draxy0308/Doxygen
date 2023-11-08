@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>modBetaCipher: Исходный файл modBetaCipher.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">modBetaCipher
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">modBetaCipher.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="modBetaCipher_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/* @class modBetaCipher</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">* @brief Шифрование методом табличной маршрутной перестановки</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">* @detalies Для шифрования используtтся метод encrypt, для расшифрования decrypt.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">* Ключ устанавливается в конструкторе.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">* @warnings Реализация только для английского языка.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classShifrovshik.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classShifrovshik.html">Shifrovshik</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">int</span> p;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classShifrovshik.html#af1866c87d3ebd33e75f3486db60740fb">   31</a></span>&#160;    <a class="code" href="classShifrovshik.html#af1866c87d3ebd33e75f3486db60740fb">Shifrovshik</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classShifrovshik.html">Shifrovshik</a>(<span class="keywordtype">int</span> w);</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classShifrovshik.html#a5237c4c0fafddce2ca965967a9f2bc58">   38</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classShifrovshik.html#a5237c4c0fafddce2ca965967a9f2bc58">Rasshifr</a>(<a class="code" href="classShifrovshik.html">Shifrovshik</a> w, <span class="keywordtype">string</span>&amp; s);</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classShifrovshik.html#abd5e5c053a7fd5fd2db148b186f10633">   46</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classShifrovshik.html#abd5e5c053a7fd5fd2db148b186f10633">Shifr</a>(<a class="code" href="classShifrovshik.html">Shifrovshik</a> w, <span class="keywordtype">string</span>&amp; s);</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classShifrovshik.html#a045d14995730777496d715bb676526ed">   54</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classShifrovshik.html#a045d14995730777496d715bb676526ed">getValidKey</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> k);</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classShifrovshik.html#a87576c248ba1cd088613e93495266f6c">   60</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classShifrovshik.html#a87576c248ba1cd088613e93495266f6c">getValidOpenText</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; s);</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classShifrovshik.html#ad165866768cec4d8b9c7bf43d944896b">   65</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classShifrovshik.html#ad165866768cec4d8b9c7bf43d944896b">getValidCipherText</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; s);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classcipher__error.html">   71</a></span>&#160;<span class="keyword">class </span><a class="code" href="classcipher__error.html">cipher_error</a>: <span class="keyword">public</span> invalid_argument</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classcipher__error.html">cipher_error</a> (<span class="keyword">const</span> std::string&amp; what_arg):</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        invalid_argument(what_arg) {}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classcipher__error.html">cipher_error</a> (<span class="keyword">const</span> <span class="keywordtype">char</span>* what_arg):</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        invalid_argument(what_arg) {}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="ttc" id="aclassShifrovshik_html"><div class="ttname"><a href="classShifrovshik.html">Shifrovshik</a></div><div class="ttdef"><b>Definition:</b> modBetaCipher.h:23</div></div>
+<div class="ttc" id="aclassShifrovshik_html_a045d14995730777496d715bb676526ed"><div class="ttname"><a href="classShifrovshik.html#a045d14995730777496d715bb676526ed">Shifrovshik::getValidKey</a></div><div class="ttdeci">int getValidKey(const int k)</div><div class="ttdoc">Зашифрование</div></div>
+<div class="ttc" id="aclassShifrovshik_html_a5237c4c0fafddce2ca965967a9f2bc58"><div class="ttname"><a href="classShifrovshik.html#a5237c4c0fafddce2ca965967a9f2bc58">Shifrovshik::Rasshifr</a></div><div class="ttdeci">string Rasshifr(Shifrovshik w, string &amp;s)</div><div class="ttdoc">Метод для установленич шифрования и расшифрования</div></div>
+<div class="ttc" id="aclassShifrovshik_html_a87576c248ba1cd088613e93495266f6c"><div class="ttname"><a href="classShifrovshik.html#a87576c248ba1cd088613e93495266f6c">Shifrovshik::getValidOpenText</a></div><div class="ttdeci">string getValidOpenText(const string &amp;s)</div><div class="ttdoc">Метод для проверки ключа на обработку исключений</div></div>
+<div class="ttc" id="aclassShifrovshik_html_abd5e5c053a7fd5fd2db148b186f10633"><div class="ttname"><a href="classShifrovshik.html#abd5e5c053a7fd5fd2db148b186f10633">Shifrovshik::Shifr</a></div><div class="ttdeci">string Shifr(Shifrovshik w, string &amp;s)</div><div class="ttdoc">Расшифрование</div></div>
+<div class="ttc" id="aclassShifrovshik_html_ad165866768cec4d8b9c7bf43d944896b"><div class="ttname"><a href="classShifrovshik.html#ad165866768cec4d8b9c7bf43d944896b">Shifrovshik::getValidCipherText</a></div><div class="ttdeci">string getValidCipherText(const string &amp;s)</div><div class="ttdoc">Метод, проверяющий текст для зашифровки на валидность</div></div>
+<div class="ttc" id="aclassShifrovshik_html_af1866c87d3ebd33e75f3486db60740fb"><div class="ttname"><a href="classShifrovshik.html#af1866c87d3ebd33e75f3486db60740fb">Shifrovshik::Shifrovshik</a></div><div class="ttdeci">Shifrovshik()=delete</div><div class="ttdoc">Ключ для шифрования и расшифрования</div></div>
+<div class="ttc" id="aclasscipher__error_html"><div class="ttname"><a href="classcipher__error.html">cipher_error</a></div><div class="ttdef"><b>Definition:</b> modBetaCipher.h:72</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

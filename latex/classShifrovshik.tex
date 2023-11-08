@@ -1,0 +1,142 @@
+\hypertarget{classShifrovshik}{}\doxysection{Класс Shifrovshik}
+\label{classShifrovshik}\index{Shifrovshik@{Shifrovshik}}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classShifrovshik_af1866c87d3ebd33e75f3486db60740fb}{Shifrovshik}} ()=delete
+\begin{DoxyCompactList}\small\item\em Ключ для шифрования и расшифрования \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classShifrovshik_a777254d1f9c272ba71bf8b8b4c2017e0}\label{classShifrovshik_a777254d1f9c272ba71bf8b8b4c2017e0}} 
+{\bfseries Shifrovshik} (int w)
+\item 
+string \mbox{\hyperlink{classShifrovshik_a5237c4c0fafddce2ca965967a9f2bc58}{Rasshifr}} (\mbox{\hyperlink{classShifrovshik}{Shifrovshik}} w, string \&s)
+\begin{DoxyCompactList}\small\item\em Метод для установленич шифрования и расшифрования \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classShifrovshik_abd5e5c053a7fd5fd2db148b186f10633}{Shifr}} (\mbox{\hyperlink{classShifrovshik}{Shifrovshik}} w, string \&s)
+\begin{DoxyCompactList}\small\item\em Расшифрование \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classShifrovshik_a045d14995730777496d715bb676526ed}{get\+Valid\+Key}} (const int k)
+\begin{DoxyCompactList}\small\item\em Зашифрование \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classShifrovshik_a87576c248ba1cd088613e93495266f6c}{get\+Valid\+Open\+Text}} (const string \&s)
+\begin{DoxyCompactList}\small\item\em Метод для проверки ключа на обработку исключений \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classShifrovshik_ad165866768cec4d8b9c7bf43d944896b}{get\+Valid\+Cipher\+Text}} (const string \&s)
+\begin{DoxyCompactList}\small\item\em Метод, проверяющий текст для зашифровки на валидность \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classShifrovshik_af1866c87d3ebd33e75f3486db60740fb}\label{classShifrovshik_af1866c87d3ebd33e75f3486db60740fb}} 
+\index{Shifrovshik@{Shifrovshik}!Shifrovshik@{Shifrovshik}}
+\index{Shifrovshik@{Shifrovshik}!Shifrovshik@{Shifrovshik}}
+\doxysubsubsection{\texorpdfstring{Shifrovshik()}{Shifrovshik()}}
+{\footnotesize\ttfamily Shifrovshik\+::\+Shifrovshik (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Ключ для шифрования и расшифрования 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Только} & целые числа \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classShifrovshik_ad165866768cec4d8b9c7bf43d944896b}\label{classShifrovshik_ad165866768cec4d8b9c7bf43d944896b}} 
+\index{Shifrovshik@{Shifrovshik}!getValidCipherText@{getValidCipherText}}
+\index{getValidCipherText@{getValidCipherText}!Shifrovshik@{Shifrovshik}}
+\doxysubsubsection{\texorpdfstring{getValidCipherText()}{getValidCipherText()}}
+{\footnotesize\ttfamily string Shifrovshik\+::get\+Valid\+Cipher\+Text (\begin{DoxyParamCaption}\item[{const string \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Метод, проверяющий текст для зашифровки на валидность 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em s} & Tекст на английском языке \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShifrovshik_a045d14995730777496d715bb676526ed}\label{classShifrovshik_a045d14995730777496d715bb676526ed}} 
+\index{Shifrovshik@{Shifrovshik}!getValidKey@{getValidKey}}
+\index{getValidKey@{getValidKey}!Shifrovshik@{Shifrovshik}}
+\doxysubsubsection{\texorpdfstring{getValidKey()}{getValidKey()}}
+{\footnotesize\ttfamily int Shifrovshik\+::get\+Valid\+Key (\begin{DoxyParamCaption}\item[{const int}]{k }\end{DoxyParamCaption})}
+
+
+
+Зашифрование 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em s} & Открытый текст на английском языке @warnings Текст не должен быть пустой строкой, содержать пробелы. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если в качестве текста введена пустая строка \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classShifrovshik_a87576c248ba1cd088613e93495266f6c}\label{classShifrovshik_a87576c248ba1cd088613e93495266f6c}} 
+\index{Shifrovshik@{Shifrovshik}!getValidOpenText@{getValidOpenText}}
+\index{getValidOpenText@{getValidOpenText}!Shifrovshik@{Shifrovshik}}
+\doxysubsubsection{\texorpdfstring{getValidOpenText()}{getValidOpenText()}}
+{\footnotesize\ttfamily string Shifrovshik\+::get\+Valid\+Open\+Text (\begin{DoxyParamCaption}\item[{const string \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Метод для проверки ключа на обработку исключений 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Только} & целые числа \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShifrovshik_a5237c4c0fafddce2ca965967a9f2bc58}\label{classShifrovshik_a5237c4c0fafddce2ca965967a9f2bc58}} 
+\index{Shifrovshik@{Shifrovshik}!Rasshifr@{Rasshifr}}
+\index{Rasshifr@{Rasshifr}!Shifrovshik@{Shifrovshik}}
+\doxysubsubsection{\texorpdfstring{Rasshifr()}{Rasshifr()}}
+{\footnotesize\ttfamily string Shifrovshik\+::\+Rasshifr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classShifrovshik}{Shifrovshik}}}]{w,  }\item[{string \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Метод для установленич шифрования и расшифрования 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Только} & целые числа \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если ключ не число или пустая строка \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classShifrovshik_abd5e5c053a7fd5fd2db148b186f10633}\label{classShifrovshik_abd5e5c053a7fd5fd2db148b186f10633}} 
+\index{Shifrovshik@{Shifrovshik}!Shifr@{Shifr}}
+\index{Shifr@{Shifr}!Shifrovshik@{Shifrovshik}}
+\doxysubsubsection{\texorpdfstring{Shifr()}{Shifr()}}
+{\footnotesize\ttfamily string Shifrovshik\+::\+Shifr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classShifrovshik}{Shifrovshik}}}]{w,  }\item[{string \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Расшифрование 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Открытый} & текст на английском языке @warnings Текст не должен быть пустой строкой, содержать пробелы. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если в качестве текста введена пустая строка \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{modBetaCipher_8h}{mod\+Beta\+Cipher.\+h}}\end{DoxyCompactItemize}

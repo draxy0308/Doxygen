@@ -1,0 +1,35 @@
+\begin{theindex}
+
+  \item {cipher\_error}, \hyperpage{7}
+
+  \indexspace
+
+  \item {getValidCipherText}
+    \subitem {Shifrovshik}, \hyperpage{8}
+  \item {getValidKey}
+    \subitem {Shifrovshik}, \hyperpage{9}
+  \item {getValidOpenText}
+    \subitem {Shifrovshik}, \hyperpage{9}
+
+  \indexspace
+
+  \item {modBetaCipher.h}, \hyperpage{11}
+
+  \indexspace
+
+  \item {Rasshifr}
+    \subitem {Shifrovshik}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Shifr}
+    \subitem {Shifrovshik}, \hyperpage{10}
+  \item {Shifrovshik}, \hyperpage{8}
+    \subitem {getValidCipherText}, \hyperpage{8}
+    \subitem {getValidKey}, \hyperpage{9}
+    \subitem {getValidOpenText}, \hyperpage{9}
+    \subitem {Rasshifr}, \hyperpage{9}
+    \subitem {Shifr}, \hyperpage{10}
+    \subitem {Shifrovshik}, \hyperpage{8}
+
+\end{theindex}

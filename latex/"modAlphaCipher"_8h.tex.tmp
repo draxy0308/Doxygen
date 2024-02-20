@@ -1,0 +1,23 @@
+\hypertarget{"modAlphaCipher"_8h}{}\doxysection{\char`\"{}mod\+Alpha\+Cipher\char`\"{}.h File Reference}
+\label{"modAlphaCipher"_8h}\index{\char`\"{}modAlphaCipher\char`\"{}.h@{""modAlphaCipher"".h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for \char`\"{}mod\+Alpha\+Cipher\char`\"{}.h\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classShifrovshik}{Shifrovshik}}
+\item 
+class \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Асаян А.\+В. 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25.\+02.\+2024 
+\end{DoxyDate}

@@ -1,0 +1,101 @@
+\hypertarget{classShifrovik}{}\doxysection{Класс Shifrovik}
+\label{classShifrovik}\index{Shifrovik@{Shifrovik}}
+
+
+Класс, реализующий шифрование методом табличной маршрутной перестановки.  
+
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classShifrovik_a10f8132b639127d72b3f1d9566b03854}\label{classShifrovik_a10f8132b639127d72b3f1d9566b03854}} 
+\mbox{\hyperlink{classShifrovik_a10f8132b639127d72b3f1d9566b03854}{Shifrovik}} ()=delete
+\begin{DoxyCompactList}\small\item\em Запрет конструктора без параметров. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classShifrovik_a08f6da802a5ee8c27add2ad435973e83}{Shifrovik}} (const int key)
+\begin{DoxyCompactList}\small\item\em Конструктор для установки ключа. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classShifrovik_afa05c6495cc3e53f865731492c5b9319}{Encrypt}} (string str)
+\begin{DoxyCompactList}\small\item\em Зашифрование. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classShifrovik_ab5b8b3ae1e72f7359742fbea9c5f95cd}{Decrypt}} (string str)
+\begin{DoxyCompactList}\small\item\em Расшифрование. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classShifrovik_acafbaf6fc8575a1800b296c4a133fd56}\label{classShifrovik_acafbaf6fc8575a1800b296c4a133fd56}} 
+int {\bfseries key\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс, реализующий шифрование методом табличной маршрутной перестановки. 
+
+Ключ устанавливается в конструкторе. Для зашифровывания и расшифровывания предназначены методы Encrypt и Decrypt. \begin{DoxyWarning}{Предупреждения}
+Реализация только для английского языка. 
+\end{DoxyWarning}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classShifrovik_a08f6da802a5ee8c27add2ad435973e83}\label{classShifrovik_a08f6da802a5ee8c27add2ad435973e83}} 
+\index{Shifrovik@{Shifrovik}!Shifrovik@{Shifrovik}}
+\index{Shifrovik@{Shifrovik}!Shifrovik@{Shifrovik}}
+\doxysubsubsection{\texorpdfstring{Shifrovik()}{Shifrovik()}}
+{\footnotesize\ttfamily Shifrovik\+::\+Shifrovik (\begin{DoxyParamCaption}\item[{const int}]{key }\end{DoxyParamCaption})}
+
+
+
+Конструктор для установки ключа. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & Ключ. Должен быть целочисленным числом. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classShifrovik_ab5b8b3ae1e72f7359742fbea9c5f95cd}\label{classShifrovik_ab5b8b3ae1e72f7359742fbea9c5f95cd}} 
+\index{Shifrovik@{Shifrovik}!Decrypt@{Decrypt}}
+\index{Decrypt@{Decrypt}!Shifrovik@{Shifrovik}}
+\doxysubsubsection{\texorpdfstring{Decrypt()}{Decrypt()}}
+{\footnotesize\ttfamily string Shifrovik\+::\+Decrypt (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})}
+
+
+
+Расшифрование. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em str} & Текст на английском языке. Может содержать цифры и буквы верхнего регистра. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Предупреждения}
+Зашифрованный текст не должен быть пустой строкой, не должен содержать пробелы, символы пунктуации и буквы нижнего регистра. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованный текст 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShifrovik_afa05c6495cc3e53f865731492c5b9319}\label{classShifrovik_afa05c6495cc3e53f865731492c5b9319}} 
+\index{Shifrovik@{Shifrovik}!Encrypt@{Encrypt}}
+\index{Encrypt@{Encrypt}!Shifrovik@{Shifrovik}}
+\doxysubsubsection{\texorpdfstring{Encrypt()}{Encrypt()}}
+{\footnotesize\ttfamily string Shifrovik\+::\+Encrypt (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})}
+
+
+
+Зашифрование. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em str} & Текст на английском языке. Может содержать цифры и буквы верхнего регистра. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Предупреждения}
+Текст не должен быть пустой строкой, не должен содержать пробелы, символы пунктуации и буквы нижнего регистра. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{m_8cpp}{m.\+cpp}}\end{DoxyCompactItemize}
